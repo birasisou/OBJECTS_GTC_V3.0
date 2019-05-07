@@ -1,0 +1,5 @@
+#popUp {
+	position: absolute; /* relatif au composant hôte */
+	left: 0px;
+	top: 50px;
+}

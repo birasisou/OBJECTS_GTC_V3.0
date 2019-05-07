@@ -1,0 +1,39 @@
+.ui-textinput {  
+    display: none; 
+    box-sizing: border-box; 
+    width: 40px; 
+    height: 15px;   
+    text-align:right;
+}
+.textinput{  
+    position: absolute;
+    left: 0px; top: 0px;  
+}   
+#sINPUT1{  
+    transform: matrix(1, 0, 0, 1, 165.044, 136.385);   
+}
+#sINPUT2{   
+    transform: matrix(1, 0, 0, 1, 165.044, 170.885);   
+}
+#sINPUT3{    
+    transform: matrix(1, 0, 0, 1, 165.044, 306.385);   
+}
+#sINPUT4{   
+    transform: matrix(1, 0, 0, 1, 165.044, 340.885);   
+}
+#sINPUT5{    
+    transform: matrix(1, 0, 0, 1, 425.044, 136.385);   
+}
+#sINPUT6{   
+    transform: matrix(1, 0, 0, 1, 425.044, 170.885);   
+}
+#sINPUT7{    
+    transform: matrix(1, 0, 0, 1, 425.044, 306.385);   
+}
+#sINPUT8{   
+    transform: matrix(1, 0, 0, 1, 425.044, 340.885);   
+}
+#sINPUT9{   
+    transform: matrix(1, 0, 0, 1, 165.044, 475.885);   
+}
+

@@ -1,0 +1,25 @@
+.ng-tooltip {
+  font-family: Arial, serif;
+  position: absolute;
+  max-width: 300px;
+  font-size: 14px;
+  text-align: center;
+  color: #030300;
+  padding: 3px 8px;
+  background: #f2f20d;
+  border-radius: 4px;
+  z-index: 1000;
+  opacity: 1;
+}
+.ng-tooltip:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+ .ng-tooltip-bottom:after {
+  bottom: 100%;
+  left: 40%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-color: transparent transparent #f2f20d;
+}

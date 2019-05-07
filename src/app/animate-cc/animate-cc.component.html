@@ -1,0 +1,183 @@
+﻿ <h1>SONDE TEMPERATURE RADIO FREQUENCE</h1> 
+<app-sonde-t-rf id="pop-up-sonde-t-tr1" mnemonicRoot="Etg3.SondeTAirNeuf" popUpTitle="SONDE TEMPERATURE RADIO FREQUENCE - ETAGE 3"></app-sonde-t-rf>   
+<app-sonde-t-rf id="pop-up-sonde-t-tr2" mnemonicRoot="Etg2.SondeTAirNeuf" popUpTitle="SONDE TEMPERATURE RADIO FREQUENCE - ETAGE 2"></app-sonde-t-rf>   
+<app-sonde-t-rf id="pop-up-sonde-t-tr3" mnemonicRoot="Etg1.SondeTAirNeuf" popUpTitle="SONDE TEMPERATURE RADIO FREQUENCE - ETAGE 1"></app-sonde-t-rf>   
+<app-sonde-t-rf id="pop-up-sonde-t-tr4" mnemonicRoot="Rdc.SondeTAirNeuf" popUpTitle="SONDE TEMPERATURE RADIO FREQUENCE - RDC"></app-sonde-t-rf>   
+
+<app-tm-small id="TM_T1" mnemonic="Chine.TM_TempPot" unit="°C"></app-tm-small>  
+<app-tm-small id="TM_P1" mnemonic="Chine.TM_TeneurEau" unit="%"></app-tm-small>   
+<app-tm-small id="TM_H1" mnemonic="Chine.TM_RelativeHum" unit="%Hr"></app-tm-small> 
+
+ 
+
+                 
+
+<!-- DEMO TOOL TIP / POP UP</h1>
+
+<div>
+    <app-tr-pression id="sondeP" mnemonic="Rdc.SondeTAirNeuf.Offset"></app-tr-pression>   
+</div>
+
+
+<div>
+	<app-tm-temperature cleopatra-instance='{ "id": "plop" }' id="tm-temp01" popUpTitle="Etage 3" countryName="France"
+		mnemonicRoot="Etg3.SondeTAirNeuf"></app-tm-temperature>
+</div>
+
+<div>
+	<app-tm-temperature id="tm-temp02" popUpTitle="Etage 2" countryName="France"
+		mnemonicRoot="Etg2.SondeTAirNeuf"></app-tm-temperature>
+</div>
+
+<div>
+	<app-tm-temperature id="tm-temp03" popUpTitle="Etage 1" countryName="France"
+		mnemonicRoot="Etg1.SondeTAirNeuf"></app-tm-temperature>
+</div>
+
+<div>
+	<app-tm-temperature id="tm-temp04" popUpTitle="RDC" countryName="France"
+		mnemonicRoot="rdc.SondeTAirNeuf"></app-tm-temperature>
+</div>
+
+
+-->
+
+
+
+<!-- 
+
+
+    <div>
+        <app-tm-pression id="tm-pression1" mnemonic="Frejus.TM_AbsoluteHum"></app-tm-pression>
+        <app-tm-pression id="tm-pression2" mnemonic="Frejus.TM_TeneurEau"></app-tm-pression>
+    </div>
+    <div>
+        <app-tm-hygro id="tm-hyro1" mnemonic="Frejus.TM_AbsoluteHum"></app-tm-hygro>
+        <app-tm-hygro id="tm-hygro2" mnemonic="Frejus.TM_TeneurEau"></app-tm-hygro>
+    </div>
+
+    <h1>TELE-REGLAGE</h1>
+    
+    <div>
+        <app-tr-pression id="tr-temp01" mnemonic="Frejus.TR_DayMode"></app-tr-pression>
+        <app-tr-pression id="tr-temp02" mnemonic="Frejus.TR_NightMode"></app-tr-pression>
+        <app-tr-pression id="tr-temp03" mnemonic="Frejus.TM_LastProDate"></app-tr-pression> 
+    </div>
+</div>
+
+<div class="test200" >
+    <h1>TEST REQUETES (x*100)</h1>
+    <p>(GOOGLE CHROME)</p>
+    <h2>100 composants</h2>
+    <p>100 requêtes AFFICHAGE RAPIDE OK + SCROLL OK</p>
+
+    <h2>200 composants</h2>
+    <p>200 requêtes AFFICHAGE OK + SCROLL OK</p>
+
+    <h2>300 composants</h2>
+    <p>300 requêtes AFFICHAGE DISPERSE RAPIDE OK + SCROLL OK</p>
+
+    <h2>400 composants</h2>
+    <p>400 requêtes AFFICHAGE PLUS DISPERSE BARRE SCROLL LENT PUIS BLOQUANT</p>
+
+    <h2>500 composants</h2>
+    <p>500 requêtes AFFICHAGE TRES DISPERSE - LENT BARRE SCROLL BLOQUE</p>
+
+
+    <div *ngFor="let nb of [1,2]">  
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">TEST STATION {{nb}} - 100 composants</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mnemo</td>
+                    <td>CHINE</td>
+                    <td>MEXIQUE</td>
+                    <td>CANADA</td>
+                    <td>ITALIE</td>
+                    <td>FREJUS</td>
+                    <td>HOLLANDE</td>
+                    <td>CHINE 2 </td>
+                    <td>MEXIQUE 2</td>
+                    <td>CANADA 2</td>
+                    <td>ITALIE 2</td>
+                </tr>
+                <tr> 
+                    <td>.TM_PlantTemp</td>       
+                    <td *ngFor= "let a of country; index as i">
+                        <app-tm-temperature id=tm-temp1{{i+1}} mnemonic={{a}}.TM_PlantTemp></app-tm-temperature>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>.TM_AirTemp</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tm-temperature id=tm-temp2{{i+1}} mnemonic={{a}}.TM_AirTemp></app-tm-temperature>
+                        </td>
+                    </tr>
+                <tr> 
+                <tr> 
+                    <td>.TM_RelativeHum</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tm-hygro id=tm-temp3{{i+1}} mnemonic={{a}}.TM_RelativeHum></app-tm-hygro>
+                        </td>
+                    </tr>
+                <tr> 
+                <tr> 
+                    <td>.TM_AbsoluteHum</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tm-hygro id=tm-temp4{{i+1}} mnemonic={{a}}.TM_AbsoluteHum></app-tm-hygro>
+                        </td>
+                    </tr>
+                <tr> 
+                <tr> 
+                    <td>.TM_VaporPressure</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tm-pression id=tm-temp5{{i+1}} mnemonic={{a}}.TM_VaporPressure></app-tm-pression>
+                        </td>
+                    </tr>
+                <tr> 
+            <tr> 
+                    <td>.TM_PARLight</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tele-mesure id=tm-temp6{{i+1}} mnemonic={{a}}.TM_PARLight></app-tele-mesure>
+                        </td>
+                    </tr>
+                <tr> 
+                <tr> 
+                    <td>.TM_GLLux</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tele-mesure id=tm-temp7{{i+1}} mnemonic={{a}}.TM_GLLux></app-tele-mesure>
+                        </td>
+                    </tr>
+                <tr> 
+                <tr> 
+                    <td>.TM_PARLightDLI</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tele-mesure id=tm-temp8{{i+1}} mnemonic={{a}}.TM_PARLightDLI></app-tele-mesure>
+                        </td>
+                    </tr>
+                <tr> 
+                <tr> 
+                    <td>.TM_GLSum</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tele-mesure id=tm-temp9{{i+1}} mnemonic={{a}}.TM_GLSum></app-tele-mesure>
+                        </td>
+                    </tr>
+                <tr>
+                <tr> 
+                    <td>.TM_GLLux</td>       
+                        <td *ngFor= "let a of country; index as i">
+                            <app-tele-mesure id=tm-temp10{{i+1}} mnemonic={{a}}.TM_GLLux></app-tele-mesure>
+                        </td>
+                    </tr>
+                <tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+-->

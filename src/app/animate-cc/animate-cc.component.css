@@ -1,0 +1,87 @@
+
+#pop-up-sonde-t-tr1{ 
+   position: absolute;
+   top: 100px;
+   left: 200px;
+}
+#pop-up-sonde-t-tr2{ 
+	position: absolute;
+	top: 100px;
+	left: 400px;
+ }
+#pop-up-sonde-t-tr3	{ 
+	position: absolute;
+	top: 100px;
+	left: 600px;
+ }
+ #pop-up-sonde-t-tr4	{ 
+	position: absolute;
+	top: 100px;
+	left: 800px;
+ }
+
+
+
+ #TM_T1 {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+#TM_P1 {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+#TM_H1 {
+	position: absolute;
+	top: 200px;
+	left: 300px;
+}
+
+
+
+
+
+
+
+	
+ #sondeP {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+
+#tm-temp01 {
+	position: absolute;
+	top: 600px;
+	left: 00px;
+}
+
+#tm-temp02 {
+	position: absolute;
+	top: 600px;
+	left: 400px;
+}
+
+#tm-temp03 {
+	position: absolute;
+	top: 800px;
+	left: 100px;
+}
+
+#tm-temp04 {
+	position: absolute;
+	top: 800px;
+	left: 400px;
+}
+
+
+table,
+td {
+    border: 1px solid rgb(0, 5, 0);
+}
+
+thead,
+tfoot {   
+    color: rgb(22, 1, 1);
+}

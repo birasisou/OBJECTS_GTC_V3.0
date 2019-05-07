@@ -1,0 +1,1 @@
+export * from "../../shared/tele-mesure/tm-temperature/tm-temperature.component";

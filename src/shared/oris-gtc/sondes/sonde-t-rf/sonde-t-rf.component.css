@@ -1,0 +1,19 @@
+#popUpSondeTRF {
+	position: absolute; /* relatif au composant hôte */
+	left: 0px;
+	top: 50px;
+}
+
+#sINPUT_Offset {
+    display: none; 
+    box-sizing: border-box; 
+    width: 40px; 
+    height: 15px; 
+    transform: matrix(1, 0, 0, 1, 155.494, 149.835);
+    text-align:right;
+}
+#popUpSondeTRF_Alarmes {
+	position: absolute; /* relatif au composant hôte */
+	left: 0px;
+    top: 0px;
+}

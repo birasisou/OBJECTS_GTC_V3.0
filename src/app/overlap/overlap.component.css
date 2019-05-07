@@ -1,0 +1,29 @@
+#test1 {
+	position: absolute;
+	top: 160px;
+	left: 20px;
+}
+
+#test2 {
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+
+#test3 {
+	position: absolute;
+	top: 80px;
+	left: 100px;
+}
+
+#test4 {
+	position: absolute;
+	top: 40px;
+	left: 140px;
+}
+
+#test5 {
+	position: absolute;
+	top: 0px;
+	left: 180px;
+}

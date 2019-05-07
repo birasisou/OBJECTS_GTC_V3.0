@@ -1,0 +1,28 @@
+#popUp {
+	position: absolute; /* relatif au composant hôte */
+	left: 0px;
+	top: 50px;
+}
+
+#tooltip {
+	width: 400px;
+	position: absolute; /* relatif au composant hôte */
+	left: 0px;
+	top: 50px;
+	border:1px solid orange;
+	background: yellow;
+}
+
+#tooltip h4, #tooltip p {
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.hidden {
+	display: none
+}
+
+.visible {
+	display: "block"
+}

@@ -1,0 +1,15 @@
+<canvas #temperatureCanvas width="200" height="75" (click)="showPopUp()" (mouseover)="isTooltipVisible = true" (mouseout)="isTooltipVisible = false"></canvas>
+
+<app-pop-up-temperature id="popUp" #popUp (closed)="popUp_onClosed()"
+	[mnemonicRoot]="mnemonicRoot" [title]="popUpTitle" [countryName]="countryName"></app-pop-up-temperature>
+
+<div id="tooltip" [ngClass]="{ 'visible': isTooltipVisible, 'hidden': !isTooltipVisible }">
+	<p>{{ temperatureValue.label }}
+	  <br>{{ temperatureMnemonic }}
+	  <br>Value : {{ temperatureValue.raw }} °C
+	</p>
+	<p> {{ (pressureValueObservable | async).label }}
+		<br>{{ pressureMnemonic }}
+		<br>Value : {{ (pressureValueObservable | async).raw }} °C
+	</p>
+</div>
